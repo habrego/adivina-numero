@@ -127,7 +127,7 @@ body {
       <button id="submit-button" type="submit">Intentar</button>
       <button id="restart-button">Reiniciar</button>
     </div>
-    Guesses:
+    Intentos:
     <div id="guesses"></div>
   </body>
 <script>
@@ -211,14 +211,14 @@ function guess() {
   if (guess < target) {
     dimLow = 1;
     dimHigh = Math.max(guess, 1);
-    updateMessage("too low");
+    updateMessage("muy bajo");
   } else if (guess > target) {
     dimLow = Math.min(guess, MAX);
     dimHigh = MAX;
-    updateMessage("too high");
+    updateMessage("muy alto");
   } else {
     dimNumbers(1, MAX);
-    document.getElementById("n" + guess).className = 'number correct';
+    document.getElementById("n" + guess).className = 'Número correcto';
     updateMessage("You got it!!");
     return;
   }
