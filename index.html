@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Adivina el número</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="banner">ADIVINA EL NÚMERO</div>
+    <div id="wheel">
+      <div id="numbers"></div>
+    </div>
+    <div id="pointer">&and;</div>
+    <div id="message">Intente un número...</div>
+    <div id="guess-form">
+      <input id="guess-input" name="guess" type="number" min="1" max="100" placeholder="Escoja un número entre 1 y 100">
+      <button id="submit-button" type="submit">Intentar</button>
+      <button id="restart-button">Reiniciar</button>
+    </div>
+    Guesses:
+    <div id="guesses"></div>
+  </body>
+
+</html>
